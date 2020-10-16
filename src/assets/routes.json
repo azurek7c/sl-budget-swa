@@ -1,14 +1,6 @@
 {
   "routes": [
     {
-      "route": "/*",
-      "allowedRoles": ["administrator"]
-    },
-    {
-      "route": "/admin/*",
-      "allowedRoles": ["administrator"]
-    },
-    {
       "route": "/api/admin",
       "allowedRoles": ["administrator"]
     },
@@ -36,6 +28,6 @@
     "content-security-policy": "default-src https: 'unsafe-eval' 'unsafe-inline'; object-src 'none'"
   },
   "mimeTypes": {
-      "custom": "text/html"
+    "custom": "text/html"
   }
 }

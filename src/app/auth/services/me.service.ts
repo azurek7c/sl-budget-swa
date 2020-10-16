@@ -7,7 +7,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root',
 })
 export class MeService {
-  private readonly url = 'AuthMe';
+  private readonly url = '.auth/me';
 
   constructor(private httpClient: HttpClient) {}
 
