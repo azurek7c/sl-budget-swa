@@ -2,15 +2,7 @@
   "routes": [
     {
       "route": "/api/poster",
-      "allowedRoles": ["administrator"]
-    },
-    {
-      "route": "/login",
-      "serve": "/.auth/login/github"
-    },
-    {
-      "route": "/logout",
-      "serve": "/.auth/logout"
+      "allowedRoles": ["poster"]
     }
   ],
   "platformErrorOverrides": [
