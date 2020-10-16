@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { first } from 'rxjs/operators';
 import { MeService } from '../services/me.service';
+import { AuthMe } from '../services/me.service.interfaces';
 
 @Component({
   selector: 'app-me',
@@ -7,11 +10,13 @@ import { MeService } from '../services/me.service';
   styleUrls: ['./me.component.scss'],
 })
 export class MeComponent implements OnInit {
-  constructor(private meService: MeService) {}
+  meAuth: Observable<AuthMe>;
+
+  constructor(public meService: MeService) {}
 
   ngOnInit(): void {}
 
   onAuthMe(): void {
-    this.meService.authMe().subscribe(a => console.log(a));
+    this.meAuth = this.meService.authMe();
   }
 }

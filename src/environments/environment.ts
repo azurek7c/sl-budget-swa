@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  baseUrl: 'http://localhost:7071/',
+  authMeUrl: 'assets/mocks/auth-me.json',
 };
 
 /*

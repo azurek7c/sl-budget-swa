@@ -1,0 +1,8 @@
+{
+  "clientPrincipal": {
+    "identityProvider": "github",
+    "userId": "736f33570c6b4a9f942500a69dde500e",
+    "userDetails": "larsk7cdk",
+    "userRoles": ["poster", "anonymous", "authenticated"]
+  }
+}
