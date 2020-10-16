@@ -10,11 +10,11 @@ using Newtonsoft.Json;
 
 namespace sl.budget
 {
-    public static class AdminGet
+    public static class PosterGet
     {
-        [FunctionName("AdminGet")]
+        [FunctionName("PosterPost")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "poster")] HttpRequest req,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
