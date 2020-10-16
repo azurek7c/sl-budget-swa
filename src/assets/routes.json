@@ -3,6 +3,14 @@
     {
       "route": "/api/poster",
       "allowedRoles": ["poster"]
+    },
+    {
+      "route": "/login",
+      "serve": "/.auth/login/github"
+    },
+    {
+      "route": "/logout",
+      "serve": "/.auth/logout"
     }
   ],
   "platformErrorOverrides": [
