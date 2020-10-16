@@ -12,6 +12,6 @@ export class MeService {
   constructor(private httpClient: HttpClient) {}
 
   authMe(): Observable<any> {
-    return this.httpClient.get(environment.apiBaseUrl + this.url);
+    return this.httpClient.get(environment.baseUrl + this.url);
   }
 }
