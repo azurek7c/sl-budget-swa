@@ -20,8 +20,7 @@ export class AuthService {
   isAuthenticated(): Observable<boolean> {
     return this.authMe().pipe(
       first(),
-      map((x: AuthMe) => x.clientPrincipal.userRoles.includes('authenticated')),
-      tap(() => (window.location.href = environment.authUrl + 'login/github'))
+      map((x: AuthMe) => x.clientPrincipal.userRoles.includes('authenticated'))
     );
   }
 }
