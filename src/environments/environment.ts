@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
 
-  authMeUrl: 'assets/mocks/auth-me.json',
+  authUrl: 'https://ambitious-sand-0a76bec03.azurestaticapps.net/.auth/',
 };
 
 /*
