@@ -1,7 +1,13 @@
-<h1>SL Budget SWA</h1>
+<ng-container *ngIf="loading | async">
+  <mat-spinner></mat-spinner>
+</ng-container>
 
-<app-me></app-me>
-<div>
-  <button routerLink="/poster">Poster</button>
-</div>
-<router-outlet></router-outlet>
+<ng-container *ngIf="!(loading | async) && (isAuth | async)">
+  <h1>SL Budget SWA</h1>
+
+  <app-me></app-me>
+  <div>
+    <button routerLink="/poster">Poster</button>
+  </div>
+  <router-outlet></router-outlet>
+</ng-container>

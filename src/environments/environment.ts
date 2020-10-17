@@ -6,6 +6,7 @@ export const environment = {
   production: false,
 
   authUrl: 'https://ambitious-sand-0a76bec03.azurestaticapps.net/.auth/',
+  authUrlMock: '/assets/mocks/auth-me.json',
 };
 
 /*
