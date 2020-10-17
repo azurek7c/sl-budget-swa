@@ -1,0 +1,15 @@
+button {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+tr.element-row:not(.example-expanded-row):hover {
+  background: whitesmoke;
+}
+
+tr.element-row:not(.example-expanded-row):active {
+  background: #efefef;
+}

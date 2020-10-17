@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthModule } from './auth/auth.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { MaterialModule } from './shared/material/material.module';
+import { ComponentsModule } from './shared/components/components.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,7 +15,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     AppRoutingModule,
     AuthModule,
     BrowserAnimationsModule,
-    MatProgressSpinnerModule,
+    MaterialModule,
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

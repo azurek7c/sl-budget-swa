@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { first } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
@@ -15,7 +16,7 @@ export class AppComponent implements OnInit {
   loading: Observable<boolean>;
   isAuth: Observable<boolean>;
 
-  constructor(private authService: AuthService) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   ngOnInit(): void {
     this.loading = of(true);
@@ -30,6 +31,8 @@ export class AppComponent implements OnInit {
 
         if (!isAuth) {
           window.location.href = environment.authUrl + 'login/github';
+        } else {
+          this.router.navigate(['poster']);
         }
       });
   }
